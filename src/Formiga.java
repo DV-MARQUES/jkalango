@@ -2,16 +2,31 @@ public class Formiga extends Presonagem{
 
     @Override
     public void mover() {
-        System.out.println(energia - 2);
+        energia -= 2;
+        System.out.println("Movendo...energia atual: "+energia);
     }
 
     @Override
     public void fazerSom(){
-        System.out.println("Fzzzz!");
+        System.out.println("Barulho da formiga: "+"Fzzzz!");
     }
     
-    @Override
-    public int dormir(){
-        return energia + 10;
-    }
+
+    public void mostrarEnergia(){
+        System.out.println("Dormindo...Energia atual: "+energia);
+   }
+    
+   @Override
+   public void comer(){
+     energia += 2;
+     System.out.println("Comendo...Energia Atual: "+energia);
+   }
+
+   public void verificarEnergia(){
+       if (energia < 5){
+           System.out.println("Seu personagem tá morto de cansado!");
+       }else{
+           System.out.println("Teu presonagem tá bem!"+"\n");
+       }
+ }
 }
