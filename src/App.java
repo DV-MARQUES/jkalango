@@ -1,6 +1,10 @@
+import br.com.jkalango.view.JIntro;
+import br.com.jkalango.view.JSplash;
+
 public class App {
     public static void main(String[] args) throws Exception {
         
+        new JIntro();
         Formiga f = new Formiga();
         System.out.println("Formiga no Trabalho: ");
         f.mover();

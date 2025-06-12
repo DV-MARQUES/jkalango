@@ -1,8 +1,8 @@
-public class Abelhinha extends Presonagem {
+public class Abelhinha extends Personagem {
 
     @Override
     public void mover() {
-        energia -= 1;
+        energia -= 4;
         System.out.println("Movendo...energia atual: "+energia);
     }
 

@@ -1,4 +1,4 @@
-public class Formiga extends Presonagem{
+public class Formiga extends Personagem{
 
     @Override
     public void mover() {
@@ -29,4 +29,6 @@ public class Formiga extends Presonagem{
            System.out.println("Teu presonagem tá bem!"+"\n");
        }
  }
+   
+
 }
