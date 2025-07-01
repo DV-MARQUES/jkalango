@@ -1,10 +1,14 @@
+import br.com.jkalango.view.JCadastroJogador;
 import br.com.jkalango.view.JIntro;
 import br.com.jkalango.view.JSplash;
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        new JIntro();
+       // new JCadastroJogador();
+        
+       new JSplash();
+       /* 
         Formiga f = new Formiga();
         System.out.println("Formiga no Trabalho: ");
         f.mover();
@@ -37,5 +41,6 @@ public class App {
         k.mostrarEnergia();
         k.comer();
         k.verificarEnergia();
+        */
     }
 }

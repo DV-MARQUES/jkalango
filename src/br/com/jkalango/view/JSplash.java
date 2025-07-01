@@ -2,7 +2,7 @@ package br.com.jkalango.view;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import javax.swing.JLabel;
-    import javax.swing.ImageIcon;
+import javax.swing.ImageIcon;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -27,6 +27,8 @@ public class JSplash extends JFrame {
         public void actionPerformed(ActionEvent e) {
             // TODO Auto-generated method stub
             JOptionPane.showMessageDialog(JSplash.this,"Jkalango");
+            dispose();
+            new JIntro();
         }   
         
     });
